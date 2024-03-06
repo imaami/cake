@@ -69,6 +69,7 @@ dkms.conf
 src/cake
 *.sarif
 /src/.vs/
+/src/lib.c
 
 /vc/.vs/cake/FileContentIndex
 /.vscode/

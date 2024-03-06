@@ -70,19 +70,12 @@ struct dirent* readdir(DIR* dirp);
 
 
 #else
-
-typedef struct __dirstream DIR;
-DIR * owner opendir (const char *__name);
-int closedir(DIR* owner dirp);
-
-#define MAX_PATH 500
-
 //https://man7.org/linux/man-pages/man2/mkdir.2.html
 #include <sys/types.h>
 #include <dirent.h>
 #include <unistd.h>
 #include <sys/stat.h>
-#include <dirent.h>
+#define MAX_PATH 500
 #endif
 
 
